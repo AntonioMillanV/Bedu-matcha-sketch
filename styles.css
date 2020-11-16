@@ -1,3 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: auto 15px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #025157;
+}
+h2 {
+    font-size: 3rem;
+    color: #025157;
+}
+h3 {
+    color: rgba(102, 102, 102, 0.8);
+    font-size: 1.2rem;
+}
+li, a {
+    color: #025157;
+}
+p {
+    color: rgba(139, 139, 139, .8);
+}
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
@@ -17,4 +46,315 @@
 
 /** dispositivos extra grandes (monitores grandes, tvs) */
 @media (min-width: 1200px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 40px 20px;
+        height: 80px;
+    }
+    
+        .logo {
+            width: 15%;
+            text-decoration: none;
+        }
+    
+        .logo > img {
+            height: 100%;
+        }
+    
+        nav{
+            width:70%;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+        }
+    
+        nav > ul > li {
+            display: inline;
+            margin: 0 25px;
+            color: #025157;
+        }
+    
+        nav > ul > li > a {
+            text-decoration: none;
+        }
+    
+        .actions {
+            width: 18%;
+            text-align: right;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    
+        .actions a {
+            text-decoration: none;
+            color: #025157;
+            display: inline;
+            margin: 0 10px;
+        }
+    
+        .actions button {
+            display: inline;
+            margin: 0 10px;
+            padding: 12px 14px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #025157;
+        }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        color: #343a40;
+    }
+    
+        main > section {
+            margin: 10px;
+            width: 50%;
+            
+        }
+    
+        .main-title {
+            margin: 10px 20px;
+            vertical-align: middle;
+        }
+    
+        .main-title > h1 {
+            margin-bottom: 20px;
+            line-height: 60px;
+        }
+    
+        .main-title > p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    
+        .main-title > button {
+            font-size: 16px;
+            background-color: #67b54b;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            padding: 10px 25px;
+        }
+    
+        .main-title > img {
+            vertical-align: middle;
+            margin: 20px;
+        }
+    
+        #main-small-text {
+            font-size: 14px;
+            color: rgba(139, 139, 139, .8)
+        }
+    
+        .explanatory-video {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    
+        .explanatory-video > video {
+            width:80%;
+        }
+        
+        .explanatory-video > img {
+            width: 120px;
+            margin-top: 10px;
+        }
+    
+    .section-brands-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 30px 10px;
+    }
+    
+        .section-brands-container > label {
+            color: rgba(139, 139, 139, .8);
+            margin: 25px auto;
+        }
+    
+        .inner-brands-container {
+            width:100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 40px;
+        }
+    
+    
+        .inner-brands-container > img {
+            height: 40px;
+        }
+    
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 10px;
+        padding: 30px 0
+    }
+    
+        .features-articles-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    
+        .features > h2 {
+            color: #025157;
+        }
+    
+        .features > p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    
+        .article-container {
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+        }
+    
+        .article-container > img {
+            max-width: 100%;
+            max-height: 300px;
+            border: 1px solid rgba(139, 139, 139, .8);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    
+        .article-container > a {
+            text-decoration: none;
+            color: #343a40;
+            font-weight: lighter;
+        }
+    
+        .article-container > p {
+            color:rgba(102, 102, 102, 0.8);
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    
+    .tools-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+    }
+    
+        .tools-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 30px
+        }
+    
+        .tool-card {
+            text-align: center;
+            border: 1px solid rgba(190, 190, 190, 0.8);
+            border-radius: 5px;
+            width: 22%;
+            padding: 40px 10px
+        }
+    
+        .tool-card > img {
+            height: 60px;
+            width: 40px;
+            margin-bottom: 20px;
+        }
+    
+        .tool-card > h3 {
+             margin-bottom: 20px
+        }
+
+    .blocks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 50px;
+        gap: 20px;
+    }
+    
+        .block {
+            margin: 10px;
+            width: 100%;
+            height: 300px;
+            border: 1px solid rgba(190, 190, 190, 0.8);
+            border-radius: 5px;
+        }
+    
+        #block-1 {
+            display: flex;
+            background: url('https://getmatcha.com/wp-content/themes/getmatcha/img/gfx/blocks/masters.jpg');
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+            #block-1 > h2 {
+                color: #fff;
+            }
+            #block-1 > p {
+                color: #67b54b;
+            }
+    
+        #block-2 {
+            /* background: url('https://getmatcha.com/wp-content/themes/getmatcha/img/gfx/blocks/masters.jpg'); */
+            padding: 30px;
+            display: flex;
+            flex-direction: row;
+    
+        }
+            .block-inner-col {
+                width: 50%;
+            }
+            .block-inner-row {
+                width:50%;
+            }
+                .block-inner-row > img {
+                    height: 80%;
+                }
+    
+            #block-2  h2 {
+                font-size: 1.5rem;
+            }
+            #block-2 p {
+                font-size: 20px;
+                color: rgba(102, 102, 102, 0.8);
+                margin-bottom: 30px;
+            }
+            #block-2 a {
+                text-decoration: none;
+                color: #67b54b;
+            }
+        #block-3 {
+            background: url('');
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+        }
+            #block-3 > p {
+                color: #025157;
+                font-size: 1.2rem;
+                margin-bottom: 30px;
+            }
+        #block-4 {
+            background-color: #035157;
+            padding: 40px;
+        }
+            #block-4 > h2 {
+                color: #fff;
+                font-size: 1.4rem;
+                padding: 20px 0;
+            }
+            #block-4 > a {
+                text-decoration: none;
+                color: #67b54b;
+            }
 }
