@@ -14,18 +14,21 @@ h1 {
   font-size: 4rem;
   color: #025157;
 }
+
 h2 {
   font-size: 3rem;
   color: #025157;
 }
+
 h3 {
   color: rgba(102, 102, 102, 0.8);
   font-size: 1.2rem;
 }
-li,
-a {
+
+li, a {
   color: #025157;
 }
+
 p {
   color: rgba(139, 139, 139, 0.8);
 }
